@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1095196599168",
+    "firebase_url": "https://eventorganizer-fa0da-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "eventorganizer-fa0da",
+    "storage_bucket": "eventorganizer-fa0da.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095196599168:android:d9ddc119e17717eb42d765",
+        "android_client_info": {
+          "package_name": "com.shreya.eventorganizer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095196599168-4vjapt2l2r5qlghtociolpglonma1ggk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shreya.eventorganizer",
+            "certificate_hash": "1c1a3c2a40390ef4a7515fc41edee5b9a9d691ef"
+          }
+        },
+        {
+          "client_id": "1095196599168-r6br8j7lc0e4qh9facmg0r6ibvmat1dt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMokrXoLbyt-OS5Z17uPOqphTUB576lk4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095196599168-r6br8j7lc0e4qh9facmg0r6ibvmat1dt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

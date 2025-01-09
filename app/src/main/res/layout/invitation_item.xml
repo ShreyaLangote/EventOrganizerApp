@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invitation message"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timestamp"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Accept Button -->
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept" />
+
+        <!-- Decline Button -->
+        <Button
+            android:id="@+id/btnDecline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decline" />
+    </LinearLayout>
+</LinearLayout>

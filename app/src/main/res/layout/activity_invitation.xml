@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".InvitationActivity">
+
+    <!-- RecyclerView for displaying the guest list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/guest_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:scrollbars="vertical" />
+
+    <!-- EditText for entering custom invitation message -->
+    <EditText
+        android:id="@+id/invitation_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write your message here"
+        android:inputType="textMultiLine" />
+
+    <!-- Button to send invitations -->
+    <Button
+        android:id="@+id/send_invitations_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Invitations"
+        android:layout_gravity="center" />
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shreya.eventorganizer">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EventOrganizer"
+        tools:targetApi="31">
+
+        <!-- SplashActivity (if you want a splash screen before Dashboard) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- DashboardActivity as the main launcher activity -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <!-- Other Activities -->
+        <activity android:name=".LoginActivity" android:exported="true" android:theme="@style/AppTheme" />
+        <activity android:name=".SignUpActivity" android:exported="true" android:theme="@style/AppTheme"/>
+        <activity android:name=".EventCreationActivity" android:exported="true" android:theme="@style/AppTheme"/>
+        <activity android:name=".GuestManagementActivity" android:exported="true" android:theme="@style/AppTheme"/>
+        <activity android:name=".InvitationActivity" android:exported="true" android:theme="@style/AppTheme"/>
+        <activity android:name=".RSVPTrackingActivity" android:exported="true" android:theme="@style/AppTheme"/>
+        <activity android:name=".ChatActivity" android:exported="true" android:theme="@style/AppTheme"/>
+        <activity android:name=".SettingsActivity" android:exported="true" android:theme="@style/AppTheme"/>
+        <activity android:name=".ForgotPasswordActivity" android:exported="true" android:theme="@style/AppTheme"/>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Guest's Name, Email, and RSVP Status -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingEnd="8dp">
+
+        <!-- Guest Name -->
+        <TextView
+            android:id="@+id/guest_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guest Name"
+            android:textStyle="bold" />
+
+        <!-- Guest Email -->
+        <TextView
+            android:id="@+id/guest_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="guest@example.com" />
+
+        <!-- RSVP Status -->
+        <TextView
+            android:id="@+id/rsvp_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RSVP Status"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <!-- Guest Checkbox -->
+    <CheckBox
+        android:id="@+id/guest_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:padding="12dp"
+    android:minHeight="48dp"
+    android:minWidth="48dp"
+    android:focusable="true"
+    android:clickable="true"/>
+
+
+    <!-- Delete and Edit Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit" />
+
+        <!-- Update RSVP Button -->
+        <Button
+            android:id="@+id/update_rsvp_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update RSVP" />
+    </LinearLayout>
+</LinearLayout>

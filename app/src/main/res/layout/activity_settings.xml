@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Section for Profile Management -->
+    <TextView
+        android:id="@+id/profile_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile Management"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Password (Optional)"
+        android:inputType="textPassword" />
+
+    <!-- Section for Notification Settings -->
+    <TextView
+        android:id="@+id/notification_section_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification Settings"
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_event_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Event Notifications" />
+
+    <CheckBox
+        android:id="@+id/checkbox_invitation_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Invitation Notifications" />
+
+    <!-- Save Changes Button -->
+    <Button
+        android:id="@+id/btn_save_changes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+        android:layout_marginTop="32dp"/>
+
+</LinearLayout>

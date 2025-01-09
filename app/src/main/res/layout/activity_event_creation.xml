@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Event Name Input -->
+    <EditText
+        android:id="@+id/event_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Name"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Event Location Input -->
+    <EditText
+        android:id="@+id/event_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Location (Optional)"
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Event Date Input -->
+    <EditText
+        android:id="@+id/event_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Date (e.g., 2025-01-10)"
+        android:inputType="date"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Event Description Input -->
+    <EditText
+        android:id="@+id/event_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Description (Optional)"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/save_event_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Event"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center" />
+</LinearLayout>
